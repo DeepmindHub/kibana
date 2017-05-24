@@ -21,7 +21,7 @@ def main():
     cnx = sqlcon.connect(user=db.USER, password=db.PWD, database='ebdb',
                                   host=db.HOST)
     cnx.start_transaction(isolation_level='READ COMMITTED')
-    es = Elasticsearch(['http://ec2-107-23-40-43.compute-1.amazonaws.com:9200/'],timeout=30, max_retries=10, retry_on_timeout=True)
+    es = Elasticsearch(['###############'],timeout=30, max_retries=10, retry_on_timeout=True)
 
 
     index_name="bigbasket"
