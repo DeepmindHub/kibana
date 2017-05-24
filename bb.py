@@ -141,7 +141,7 @@ def getData(cnx,last_updated):
             --         WHERE role=2 
             --         )t2 ON cl.id=t2.cluster_id 
             WHERE chain_id=85
-            -- AND (t2.username NOT IN ('harish.naidu','nirupama.das','zia.shaikh','n.srikanth') OR t2.cluster_id IN (23,67))
+            -- AND (t2.username NOT IN ('#############') OR t2.cluster_id IN (23,67))
             AND awb LIKE '%scheduled%'
             AND o.last_updated>="'''+str(last_updated)+'''"
             ;
