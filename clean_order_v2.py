@@ -20,7 +20,7 @@ DEFAULT_DELIVERY_SLA = 45
 def main():
     cnx = utils.get_cnx(db, read_committed=True)
 
-    es = Elasticsearch(['http://ec2-107-23-40-43.compute-1.amazonaws.com:9200/'])
+    es = Elasticsearch(['################'])
     # create_kibana_index(es)
 
     last_updated = None
