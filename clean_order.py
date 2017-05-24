@@ -18,7 +18,7 @@ def main():
     cnx = sqlcon.connect(user=db.USER, password=db.PWD, database='ebdb',
                                   host=db.HOST)
     cnx.start_transaction(isolation_level='READ COMMITTED')
-    es = Elasticsearch(['http://ec2-107-23-40-43.compute-1.amazonaws.com:9200/'])
+    es = Elasticsearch(['###################'])
 
     index_name="clean_order"
     mappings={
